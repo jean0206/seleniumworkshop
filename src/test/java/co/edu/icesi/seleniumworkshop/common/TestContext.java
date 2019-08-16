@@ -51,4 +51,14 @@ public class TestContext {
         options.setExperimentalOption("prefs", prefs);
         return new ChromeDriver(options);
     }
+
+    public String getEmail()
+    {
+        return properties.getProperty("email");
+    }
+
+    public String getPassword()
+    {
+        return properties.getProperty("password");
+    }
 }
