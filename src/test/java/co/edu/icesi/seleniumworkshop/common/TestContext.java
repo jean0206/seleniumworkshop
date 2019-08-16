@@ -2,9 +2,12 @@ package co.edu.icesi.seleniumworkshop.common;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 public class TestContext {
@@ -33,7 +36,7 @@ public class TestContext {
         return properties.getProperty("baseUrl");
     }
 
-    public String getDriverPath()
+    private String getDriverPath()
     {
         return properties.getProperty("pathToChromeDriver");
     }
@@ -41,6 +44,21 @@ public class TestContext {
     public WebDriver getDriver()
     {
         System.setProperty("webdriver.chrome.driver", getDriverPath());
-        return new ChromeDriver();
+        Map<String, Object> prefs = new HashMap<>();
+        prefs.put("profile.default_content_setting_values.notifications", 2);
+
+        ChromeOptions options  = new ChromeOptions();
+        options.setExperimentalOption("prefs", prefs);
+        return new ChromeDriver(options);
+    }
+
+    public String getEmail()
+    {
+        return properties.getProperty("email");
+    }
+
+    public String getPassword()
+    {
+        return properties.getProperty("password");
     }
 }

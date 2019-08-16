@@ -15,4 +15,5 @@ For a linux based environment, execute:
 
 The base url for the project and the Web Driver to use can be configured by modifying the `src/test/resources/test.properties` file
 
-* You will need to specify the path to the Chrome Web Driver using the `pathToChromeDriver` property
+* You will need to specify the path to the Chrome Web Driver using the `pathToChromeDriver` property  
+* You will need to set a facebook email and password valid
