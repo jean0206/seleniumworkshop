@@ -29,7 +29,7 @@ public class FacebookStepDef {
 
     @Before
     public void setUp() {
-        webDriver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
     @After

@@ -8,7 +8,7 @@ public class SearchPage {
     private final WebDriver webDriver;
 
     private final static String SEARCH_INPUT = "[data-testid=search_input]";
-    private final static String FIRST_RESULT_IMAGE = "#BrowseResultsContainer [alt=\"Ingeniería de Sistemas - Universidad Icesi\"]";
+    private final static String FIRST_RESULT_IMAGE = "#BrowseResultsContainer a>img[alt^=Ing]";
 
     public SearchPage(final WebDriver webDriver) {
         this.webDriver = webDriver;
