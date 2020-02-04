@@ -10,6 +10,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 
 import java.text.SimpleDateFormat;
@@ -30,6 +31,8 @@ public class FacebookStepDef {
     @Before
     public void setUp() {
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        Dimension d = new Dimension(1000,2000);
+        webDriver.manage().window().setSize(d);
     }
 
     @After
