@@ -39,4 +39,4 @@ The base url for the project and the Web Driver to use can be configured by modi
 * You will need to specify the path to the Chrome Web Driver using the `pathToChromeDriver` property. By default the path is the project root.
 * You will need to set a facebook email and password valid
 
-Note: you can download the chromedriver in https://chromedriver.chromium.org/downloads if are getting trouble with the chromedriver that are in the root project. Remember that you should use the same chromedriver of your chrome version
+Note: you can download the chromedriver in https://chromedriver.chromium.org/downloads if you are getting troubles with the chromedriver that are in the root project. Remember that you should use the same chromedriver of your chrome version
