@@ -33,7 +33,7 @@ The base url for the project and the Web Driver to use can be configured by modi
 Note: you can download the chromedriver in https://chromedriver.chromium.org/downloads if you are getting troubles with the chromedriver that are in the root project. Remember that you should use the same chromedriver of your chrome version
 
 ### Getting Started
-This project has included a maven wrapper. So, to run the test, just execute following command:
+This project has included a maven wrapper. So, to run the test, just execute the following command:
 
     mvnw.cmd test
 
