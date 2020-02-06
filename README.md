@@ -11,7 +11,7 @@ After the presentation about UI tests, E2E tests, POM, AAA and BDD, you have to 
         When he searches Universidad Ingeniería de Sistemas - Universidad Icesi
         And he posts a comment
         Then the post should be loaded
-        When he cliok on send a direct message button
+        When he clicks on send a direct message button
         Then he sent a message
 
 You will have to use some of the following selectors  
