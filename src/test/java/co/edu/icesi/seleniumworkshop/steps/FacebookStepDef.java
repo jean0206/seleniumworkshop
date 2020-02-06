@@ -52,7 +52,7 @@ public class FacebookStepDef {
 
     @When("^he searches Universidad Ingeniería de Sistemas - Universidad Icesi")
     public void searchUniversityPage() {
-        searchPage.search("Ingeniería de Sistemas - Universidad Icesi");
+        searchPage.search("ingeniería de sistemas - universidad icesi");
         searchPage.goToFirstResult();
     }
 
